@@ -1,0 +1,21 @@
+CREATE NEW MIGRATION
+php artisan make:migration create_users_table --create=users
+
+CREATE MODIFY MIGRATION
+php artisan make:migration add_email_and_mobile_to_users_table --table=users
+
+EXECUTE MIGRATION
+php artisan migrate
+
+CREATE CONTROLLER
+php artisan make:controller CategoryController
+
+CREATE MODEL
+php artisan make:model Category
+
+CREATE MODEL & MIGRATION & CONTROLLER
+php artisan make:model Category -mc
+
+CREATE CONTROLLER FOR WEB
+php artisan make:controller CategoryController --resource
+
